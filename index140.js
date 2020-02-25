@@ -28,8 +28,12 @@ let mutants = ["Professor X",
 ] 
 
 const Mod_Mutants = mutants.filter(function(elem){
-        return ((elem != "Magneto") || (elem != "Iceman") || (elem != "Gambit") )
-    
+        if (elem == "Magneto" || elem == "Iceman" || elem == "Gambit") {
+            return;
+        }
+        else{
+        return elem
+        }
     // if(elem != "Magneto" || elem != "Iceman" || elem != "Gambit")
     //     return elem;
 })
