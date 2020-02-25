@@ -18,22 +18,14 @@ for (let index = 0; index < 1000; index++) {
 }
 
 const incValuesBy10 = number.map(function(num){
-    return num;
-    
-    
-    
-    
-    //  console.log("index: " + index + " original number: " + number[index])
-    // number[index] += 10;
-    // console.log(" incremented value: " + number[index] )
-    // // console.log("Length is " + number.length)
+    return num += 10;
 
 
 
 });
 // console.dir(incValuesBy10, {'maxArrayLength': null});
 
-console.log("index: " + num[])
+console.log(" index: ") 
 
 
 
