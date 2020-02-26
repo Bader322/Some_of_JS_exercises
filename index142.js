@@ -13,3 +13,13 @@
 
 var firstPerson = ["Bader", "Alsaleh", "3 Leam Rd", "30", ];
 var secondPerson = ["Herb", "Harbey", "downtown nanaimo", "32"];
+
+var first_red = firstPerson.reduce(function(acc,curr){
+    return acc+curr;
+})
+
+var second_red = secondPerson.reduce(function(acc,curr){
+    return acc+curr;
+})
+console.log(first_red);
+console.log(second_red);
