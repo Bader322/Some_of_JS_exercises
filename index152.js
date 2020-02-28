@@ -24,12 +24,20 @@
 let user =  {
     username: null,
     password: null,
-    greet: function(){
+    greet: function ()  {
         if(this.username != null)
-        console.log("Welcome " + this.username)
+            console.log("Welcome " + this.username)
         else
-        console.log(" Please assign a username value");
+            console.log(" Please assign a username value");
     },
+    passdCheck: function () {
+        if(this.password != null)
+            console.log("Welcome " + this.username + ", The passsword is now set");
+        else
+            console.log(" No password set");
+    },
+
+
     updaterUsername: function(name){
         this.username = name;
         
@@ -42,4 +50,6 @@ let user =  {
 
 
 user.updaterUsername("Bader");
+user.updatePassword("1234")
 user.greet();
+user.passdCheck();
