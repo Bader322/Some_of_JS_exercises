@@ -43,8 +43,8 @@ let player = {
     loseEnergy: function(damage){
         this.energy -= damage;
         if(this.energy <= 0){
-            console.log("Way too damaged, Dead, You're at: " + this.lives);
-            console.log("");
+            console.log("Way too damaged, Dead, You're at: " + this.energy);
+            this.energy = 0 ;
 
             return
         }
@@ -74,14 +74,9 @@ let player = {
 }
 
 player.name = "Bader"
+// player.loseLife();
+player.loseEnergy(200);
+player.recoverEnergy(150)
+player.recoverLife();
 player.loseLife();
-player.loseEnergy(10);
-player.loseEnergy(5);
-player.loseEnergy(15);
-player.loseEnergy(20);
-player.loseEnergy(10);
-player.loseEnergy(30);
-player.loseEnergy(40);
-player.loseLife();
-// player.recoverLife()
-// player.recoverLife()
+
